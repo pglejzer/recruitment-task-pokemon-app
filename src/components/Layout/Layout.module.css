@@ -1,0 +1,27 @@
+.layout {
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.container {
+  max-width: min(var(--container-width), 100% - var(--space-lg));
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+
+  @media (max-width: 768px) {
+    padding: var(--space-sm);
+    max-width: 100%;
+  }
+}
+
+.header {
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.title {
+  color: var(--text-color);
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: 600;
+  margin: 0;
+}
